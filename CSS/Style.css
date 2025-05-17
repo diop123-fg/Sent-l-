@@ -1,0 +1,98 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #a19a9b;
+    text-align: center;
+    margin-top: 50px;
+}
+form {
+    background: #f6f8f7;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #f4f8f6;
+}
+input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 200px;
+}
+button {
+    padding: 8px 16px;
+    border: none;
+    background: black;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background: black;
+}
+/* Style général */
+
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover {
+    background: #0056b3;
+}
+
+/* Container des vidéos */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Box vidéo */
+.video-box {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+    width: 300px;
+    padding: 16px;
+    text-align: left;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px #bbb;
+}
+.video-thumbnail {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.video-box h3 {
+    margin: 10px 0 5px 0;
+    color: #007bff;
+}
+.video-box p {
+    color: #444;
+    font-size: 15px;
+    margin: 0;
+}
+.video-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .video-box { width: 90vw; }
+}
